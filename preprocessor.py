@@ -3,25 +3,27 @@ __author__ = 'raj'
 import glob
 import os
 import sys
-
 directory=sys.argv[1]
-print(directory)
 training=sys.argv[2]
-#training="spam_training.txt"
 trainingFIle=open(training,"w")
-#trainingFIle=open("sentiment_training.txt","w")
-#directory= "/home/raj/repos/SPAM_dev/*.txt"
-#directory= "/home/raj/repos/SPAM_training/*.txt"
-#directory= "/home/raj/repos/SENTIMENT_training/*.txt"
+
 inputDir=glob.glob(directory)
+filenames=[]
 for file in inputDir:
+    fileName=os.path.split(file)[1]
+    dir=os.path.split(file)[0]
+    filenames.append(dir+"/"+fileName)
+filenames=sorted(filenames)
+
+for file in filenames:
     fileName= os.path.split(file)[1]
     label=fileName.split(".")[0]
     trainingFIle.write(label+" ")
-    fileHandle=open(file,"r",errors='ignore')   #errors='ignore'
+    fileHandle=open(file,"r",errors='ignore')
     fileContents=fileHandle.readlines()
     for message in fileContents:
-      trainingFIle.write(message[0:len(message)-1]+" ")
+      message=message.rstrip()
+      trainingFIle.write(message+" ")
     trainingFIle.write("\n")
 
 trainingFIle.close()

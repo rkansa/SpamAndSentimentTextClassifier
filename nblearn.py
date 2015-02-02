@@ -1,13 +1,10 @@
 __author__ = 'raj'
 
 import sys
-
 dictionaryOfCounts={}
 vocabulary={}
 classes=[]
 vocabularySize=0
-#training="spam_training.txt"
-#model="spam.nb"
 training=sys.argv[1]                                    #FROM COMMAND LINE
 model=sys.argv[2]                                       #FROM COMMAND LINE
 

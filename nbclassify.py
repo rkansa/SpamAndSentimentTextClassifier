@@ -1,27 +1,14 @@
 __author__ = 'raj'
 
-import glob
-import os
 import sys
 from math import log
-
 modelDictionary={}
 classes=[]
-#directory= "/home/raj/repos/SPAM_dev/*.txt"
-#directory= "/home/raj/repos/csci544-hw0/data/*.txt"
-#modelFile=open("sentiment.nb","r")
-          #FROM COMMAND LINE
-                                    #FROM COMMAND LINE
 model=sys.argv[1]
-directory=sys.argv[2]
-print(directory)
-print(model)
-#model="spam.nb"
 if model=="spam.nb":
     out="spam.out"
 elif model=="sentiment.nb":
-    out="sentiment.nb"
-output=open(out,"w")
+    out="sentiment.out"
 modelFile=open(model,"r",errors='ignore')                       #errors='ignore'
 for line in modelFile.readlines():
     word=line.split()
@@ -44,25 +31,11 @@ def calculateProbOfWordGivenClass(word,fileType):
     vocabularySize=int(modelDictionary["vocabularySize"])
     denomAfterAddone=totalfileTypeWords+vocabularySize
     return float(numAddone/denomAfterAddone)
-
-testFile=open("test.txt","w+")
-
-inputDir=glob.glob(directory)
-for file in inputDir:
-    fileName= os.path.split(file)[1]                #Need to remove
-    label=fileName.split(".")[0]                    #These three lines
-    testFile.write(label+" ")                       #After COmputing Accuracy
-    fileHandle=open(file,"r",errors='ignore')                       #errors='ignore'
-    fileContents=fileHandle.readlines()
-    for message in fileContents:
-      testFile.write(message[0:len(message)-1]+" ")
-    testFile.write("\n")
-testFile.close()
-
-testFile=open("test.txt","r",errors='ignore')                       #errors='ignore'
+test=sys.argv[2]
+testFile=open(test,"r",errors='ignore')                       #errors='ignore'
 
 for line in testFile.readlines():
-    higherprobability=-9999999999999999
+    higherprobability=-float("inf")
     label=""
     words=line.split()
     for fileType in classes:
@@ -79,7 +52,7 @@ for line in testFile.readlines():
             label=fileType
         modelDictionary["prob"+fileType.capitalize()+"GivenDocument"]=0
         modelDictionary["probDocumentGiven"+fileType.capitalize()+"Class"]=0
-    output.write(label+"\n")
+    print(label)
 
 
 
