@@ -1,4 +1,4 @@
-**1. Part 1**
+# **1. Part 1** #
 
 **SPAM Dataset**
 
@@ -25,9 +25,9 @@ Recall=0.98
 Fscore=0.9389
 
 
-**2.  Part 2:**
+# **2.  Part 2:** #
 
-Using SVM
+**Using SVM**
 
 **SPAM Dataset**
 
@@ -53,7 +53,7 @@ Precision = 0.9112
 Recall=0.904
 Fscore=0.9076
 
-Using MegaM
+**Using MegaM**
 
 **SPAM Dataset**
 
@@ -78,3 +78,7 @@ For Neg Data:
 Precision = 0.9252
 Recall=0.908
 Fscore=0.9165
+
+
+# **3.Part 3** #
+
