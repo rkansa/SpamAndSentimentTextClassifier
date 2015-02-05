@@ -83,6 +83,7 @@ Fscore=0.8541
 # # **3.Part 3** # #
 
 When only 10% of training data is used to train the model ,the results are as follows:
+
 **# Part 1 # #**
 
 The precision,recall and Fscore only decrease slightly by 0.05 approximately.As the model still has sufficient vocabulary size(known words) and same proportion of Spam/Ham documents,it still gives decent output.However if the new training has a different ratio of SPAM/HAM documents,the precision,recall and FScore of Ham documents , recall of Spam documents can decrease considerably because the prior probability information plays less role when there are almost same number of both documents.If the initial training data is very large(Million files),then using only 10 percent data for training won't affect the classification by much.
