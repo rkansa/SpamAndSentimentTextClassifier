@@ -15,14 +15,14 @@ Fscore=0.9869
 **SENTIMENT Dataset**
 
 For Pos Data:
-Precision = 0.8412
-Recall=0.8831
-Fscore=0.8616
+Precision = 0.8214
+Recall=0.8513
+Fscore=0.836
 
 For Neg Data:
-Precision = 0.8734
+Precision = 0.8434
 Recall=0.812
-Fscore=0.8416
+Fscore=0.8311
 
 
 # **2.  Part 2:** #
