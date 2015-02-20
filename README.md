@@ -3,25 +3,37 @@
 **SPAM Dataset**
 
 For Spam Data:
+
 Precision = 0.9469
+
 Recall=0.9834
+
 Fscore=0.9648
 
 For HAM Data:
+
 Precision = 0.9939
+
 Recall=0.98
+
 Fscore=0.9869
 
 **SENTIMENT Dataset**
 
 For Pos Data:
+
 Precision = 0.8214
+
 Recall=0.8513
+
 Fscore=0.836
 
 For Neg Data:
+
 Precision = 0.8434
+
 Recall=0.812
+
 Fscore=0.8311
 
 
@@ -32,25 +44,37 @@ Fscore=0.8311
 **SPAM Dataset**
 
 For Spam Data:
+
 Precision = 0.95681
+
 Recall=0.7933
+
 Fscore=0.8674
 
 For HAM Data:
+
 Precision = 0.9293
+
 Recall=0.987
+
 Fscore=0.9573
 
 **SENTIMENT Dataset**
 
 For Pos Data:
+
 Precision = 0.8948
+
 Recall=0.8279
+
 Fscore=0.86
 
 For Neg Data:
+
 Precision = 0.8473
+
 Recall=0.8911
+
 Fscore=0.8688
 
 **Using MegaM**
@@ -58,25 +82,37 @@ Fscore=0.8688
 **SPAM Dataset**
 
 For Spam Data:
+
 Precision = 0.9553
+
 Recall=0.9421
+
 Fscore=0.9486
 
 For HAM Data:
+
 Precision = 0.9791
+
 Recall=0.984
+
 Fscore=0.9815
 
 **SENTIMENT Dataset**
 
 For Pos Data:
+
 Precision = 0.8628
+
 Recall=0.8375
+
 Fscore=0.85
 
 For Neg Data:
+
 Precision = 0.8419
+
 Recall=0.8666
+
 Fscore=0.8541
 
 
