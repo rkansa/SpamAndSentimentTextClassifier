@@ -22,7 +22,7 @@ for file in filenames:
     fileHandle=open(file,"r",errors='ignore')
     fileContents=fileHandle.readlines()
     for message in fileContents:
-      message=message.rstrip()
+      message=message.rstrip("\n")
       trainingFIle.write(message+" ")
     trainingFIle.write("\n")
 
