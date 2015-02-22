@@ -4,19 +4,19 @@
 
 For Spam Data:
 
-Precision = 0.9469
+Precision = 0.9514
 
-Recall=0.9834
+Recall=0.9724
 
-Fscore=0.9648
+Fscore=0.9618
 
 For HAM Data:
 
-Precision = 0.9939
+Precision = 0.9899
 
-Recall=0.98
+Recall=0.982
 
-Fscore=0.9869
+Fscore=0.9859
 
 **SENTIMENT Dataset**
 
